@@ -1,0 +1,245 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+
+
+$color_1: #ffffff;
+$color_2: #000000;
+$color_3: #3f729b;
+$color_4: rgba(222, 226, 230, 0.75);
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'arial', sans-serif;
+$background-color_1: #000000;
+$background-color_2: #ffffff;
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	font-family: $font-family_1;
+    color: #ffffff;
+}
+header {
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	width: 120px;
+	height: 32px;
+	border: #000000;
+	margin: 20px;
+	line-height: 32px;
+	display: flex;
+	justify-content: left;
+}
+.hamburger {
+	display: none;
+}
+.redes{
+    a{
+        i{
+            text-align: center !important;
+            justify-content: center !important;
+            bottom: 10px !important;
+            padding: 15px;
+            font-size: 35px;
+            text-decoration: none;
+            color: $color_2;
+        }
+    }
+}
+.redes{
+    a{
+        i :active, :focus, :hover{
+            transform: translateY(-10px);
+            transition-duration: .2s;
+            transition-timing-function: ease-in !important;
+        }
+    }
+}
+// no pude poner que el efecto sea para la entrada y la salida del hover
+.offcanvas {
+	--bs-offcanvas-width: 40vh !important;
+	--bs-offcanvas-height: 100vh !important;
+    padding-bottom: 40px;
+}
+.redes {
+    display: inline-flex;
+    padding: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.navegacion {
+	display: flex;
+	display: block !important;
+	padding: .5rem !important;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar {
+	display: flex;
+	align-items: center;
+	border-radius: 15px;
+	padding-right: 5px;
+	a {
+		font-family: $font-family_2;
+		padding: 20px;
+		color: $color_1;
+		text-decoration: none;
+		line-height: 1.5;
+		transition: all ease-in-out 0.2s;
+		font-weight: 750;
+		&:hover {
+			padding: 8px;
+			background-color: $background-color_2;
+			transition: all ease-in-out 0.2s;
+			color: $color_2;
+		}
+	}
+}
+.imagenes {
+	height: 700px !important;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.modelos {
+	height: 400px !important;
+	width: 100% !important;
+	object-fit: cover !important;
+	object-position: center !important;
+}
+.content {
+	margin-left: 150px;
+	padding: 20px;
+}
+section {
+	background-color: $background-color_1;
+	a {
+		color: $color_2;
+		text-decoration: none;
+	}
+}
+h1 {
+	color: $color_1;
+	padding: 10px;
+	margin-bottom: 0px !important;
+	color: $color_1;
+	padding: 10px;
+	padding-top: 50px;
+	margin-bottom: 50px !important;
+}
+.subir {
+	width: 40px;
+	height: 40px;
+	color: $color_1;
+	background-color: $background-color_1;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 20px;
+	font-size: 20px;
+	box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
+	&:hover {
+		color: $color_1;
+	}
+}
+#ig {
+	&:hover {
+		color: $color_3 !important;
+	}
+}
+.container {
+	max-width: 100% !important;
+	background-color: $background-color_1;
+}
+footer {
+	text-align: center;
+	padding: 20px;
+	color: $color_4 !important;
+	p {
+		color: $color_4 !important;
+	}
+}
+.footer__a {
+	text-decoration: none;
+	padding: 5px;
+	color: $color_4 !important;
+}
+#Inicio {
+	border-start-start-radius: 15px;
+	border-end-start-radius: 15px;
+}
+#contacto {
+	border-end-end-radius: 15px;
+	border-start-end-radius: 15px;
+}
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.card {
+	min-height: 540px;
+}
+.img-fluid {
+	max-width: 100%;
+	width: 100%;
+}
+.section {
+	display: flex;
+	height: 500px;
+	color: $color_1;
+	gap: 40px;
+}
+.card-img-top {
+	height: 400px;
+	width: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+.serviceCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 100%;
+}
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 100%;
+}
+@media (max-width: 1000px) {
+	.sidebar {
+		display: none;
+	}
+	.hamburger {
+		display: flex;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+	}
+	header {
+		justify-content: center;
+	}
+}
+@media (max-width: 1200px) {
+	.section {
+		flex-direction: column;
+		gap: 100px;
+		height: fit-content;
+	}
+	.card-img-top {
+		height: 250px;
+		width: 300px;
+		object-fit: cover;
+		object-position: center;
+	}
+}
