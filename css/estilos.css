@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
 
 html {
     scroll-behavior: smooth;
@@ -6,7 +6,8 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
 }
 
 header {
@@ -29,15 +30,43 @@ header {
     display: none;
 }
 
+.redes a i {
+    text-align: center !important;
+    justify-content: center !important;
+    bottom: 10px !important;
+    padding: 15px;
+    font-size: 35px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.redes a i :active,
+.redes a :focus,
+.redes a :hover {
+    transform: translateY(-10px);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in !important;
+}
+
 .offcanvas {
     --bs-offcanvas-width: 40vh !important;
     --bs-offcanvas-height: 100vh !important;
+    padding-bottom: 40px;
+}
+
+.redes {
+    display: inline-flex;
+    padding: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
 }
 
 .navegacion {
     display: flex;
     display: block !important;
-    padding: .5rem !important;
+    padding: 0.5rem !important;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -50,7 +79,7 @@ header {
 }
 
 .sidebar a {
-    font-family: 'arial', sans-serif;
+    font-family: "arial", sans-serif;
     padding: 20px;
     color: #ffffff;
     text-decoration: none;
@@ -98,6 +127,10 @@ h1 {
     color: #ffffff;
     padding: 10px;
     margin-bottom: 0px !important;
+    color: #ffffff;
+    padding: 10px;
+    padding-top: 50px;
+    margin-bottom: 50px !important;
 }
 
 .subir {
@@ -119,33 +152,13 @@ h1 {
     color: #ffffff;
 }
 
-
-#ig :hover {
+#ig:hover {
     color: #3f729b !important;
-}
-
-
-@media (max-width: 1000px) {
-    .sidebar {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-    }
-
-    header {
-        justify-content: center;
-    }
 }
 
 .container {
     max-width: 100% !important;
     background-color: #000000;
-
 }
 
 footer {
@@ -154,14 +167,14 @@ footer {
     color: rgba(222, 226, 230, 0.75) !important;
 }
 
+footer p {
+    color: rgba(222, 226, 230, 0.75) !important;
+}
+
 .footer__a {
     text-decoration: none;
     padding: 5px;
-    color: rgba(222, 226, 230, 0.75) !important
-}
-
-footer p {
-    color: rgba(222, 226, 230, 0.75) !important
+    color: rgba(222, 226, 230, 0.75) !important;
 }
 
 #Inicio {
@@ -183,13 +196,6 @@ footer p {
     min-height: 540px;
 }
 
-h1 {
-    color: #ffffff;
-    padding: 10px;
-    padding-top: 50px;
-    margin-bottom: 50px !important;
-}
-
 .img-fluid {
     max-width: 100%;
     width: 100%;
@@ -209,23 +215,6 @@ h1 {
     object-position: center;
 }
 
-@media (max-width: 1200px) {
-    .section {
-        flex-direction: column;
-        gap: 100px;
-        height: fit-content;
-    }
-
-    .card-img-top {
-        height: 250px;
-        width: 300px;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-
-
 .serviceCard {
     display: flex;
     flex-direction: column;
@@ -240,4 +229,36 @@ h1 {
     justify-content: center;
     align-items: left;
     width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .sidebar {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+        gap: 100px;
+        height: fit-content;
+    }
+
+    .card-img-top {
+        height: 250px;
+        width: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
