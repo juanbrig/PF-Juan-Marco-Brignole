@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +11,7 @@ body {
 }
 
 header {
+  font-family: "Roboto", sans-serif;
   background-color: #000000;
   display: flex;
   justify-content: space-between;
@@ -29,9 +31,37 @@ header {
   display: none;
 }
 
+.redes a i {
+  text-align: center !important;
+  justify-content: center !important;
+  bottom: 10px !important;
+  padding: 15px;
+  font-size: 35px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.redes a i :active,
+.redes a :focus,
+.redes a :hover {
+  transform: translateY(-10px);
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in !important;
+}
+
 .offcanvas {
   --bs-offcanvas-width: 40vh !important;
   --bs-offcanvas-height: 100vh !important;
+  padding-bottom: 40px;
+}
+
+.redes {
+  display: inline-flex;
+  padding: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
 }
 
 .navegacion {
@@ -48,6 +78,7 @@ header {
   border-radius: 15px;
   padding-right: 5px;
 }
+
 .sidebar a {
   font-family: "arial", sans-serif;
   padding: 20px;
@@ -57,11 +88,28 @@ header {
   transition: all ease-in-out 0.2s;
   font-weight: 750;
 }
+
 .sidebar a:hover {
   padding: 8px;
   background-color: #ffffff;
   transition: all ease-in-out 0.2s;
   color: #000000;
+}
+
+.img-fluid {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.video-container {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 
 .imagenes {
@@ -90,6 +138,7 @@ header {
 section {
   background-color: #000000;
 }
+
 section a {
   color: #000000;
   text-decoration: none;
@@ -98,17 +147,17 @@ section a {
 h1 {
   color: #ffffff;
   padding: 10px;
-  margin-bottom: 0px !important;
+  margin-bottom: 0px;
   color: #ffffff;
   padding: 10px;
   padding-top: 50px;
-  margin-bottom: 50px !important;
+  margin-bottom: 50px;
 }
 
 .subir {
   width: 40px;
   height: 40px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   background-color: #000000;
   position: fixed;
   bottom: 30px;
@@ -119,6 +168,7 @@ h1 {
   font-size: 20px;
   box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
 }
+
 .subir:hover {
   color: #ffffff;
 }
@@ -132,19 +182,197 @@ h1 {
   background-color: #000000;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: grid-template-columns 0.5s ease;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 65px;
+  pointer-events: none;
+}
+
+.car-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+}
+
+.etiqueta-camionetas {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  color: #ffffff;
+  background-color: rgb(100, 0, 175);
+  padding: 5px;
+  z-index: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.etiqueta-autos {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  color: #ffffff;
+  background-color: rgb(150, 0, 0);
+  padding: 5px;
+  z-index: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.etiqueta-suv {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  color: #ffffff;
+  background-color: rgb(0, 0, 150);
+  padding: 5px;
+  z-index: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.car-details {
+  text-align: center;
+  margin-top: 5px;
+  color: #000000;
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.car-image {
+  width: 100%;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.car-image:hover {
+  filter: brightness(1.25);
+  transform: scale(1.07);
+}
+
+.nombres {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.precios-camionetas {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: rgb(100, 0, 175);
+}
+
+.precios-autos {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: rgb(150, 0, 0);
+}
+
+.precios-suv {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: rgb(0, 0, 150);
+}
+
+.individual {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.nissan {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: "raleway", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.nissan-p {
+  margin-top: 10px;
+  font-size: 25px;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+  padding-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.nissan-h2 {
+  font-size: 65px;
+  font-weight: 400;
+  color: #000000;
+  padding-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.grid-container-nissan {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.columns img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 footer {
   text-align: center;
   padding: 20px;
-  color: rgba(222, 226, 230, 0.75) !important;
+  color: #ffffff !important;
 }
+
 footer p {
-  color: rgba(222, 226, 230, 0.75) !important;
+  color: #ffffff !important;
 }
 
 .footer__a {
   text-decoration: none;
   padding: 5px;
-  color: rgba(222, 226, 230, 0.75) !important;
+  color: #ffffff !important;
 }
 
 #Inicio {
@@ -162,6 +390,15 @@ footer p {
   margin-right: 0px !important;
 }
 
+.row-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .card {
   min-height: 540px;
 }
@@ -174,7 +411,7 @@ footer p {
 .section {
   display: flex;
   height: 500px;
-  color: white;
+  color: #ffffff;
   gap: 40px;
 }
 
@@ -203,6 +440,21 @@ footer p {
   width: 100%;
 }
 
+@media screen and (max-width: 950px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 420px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 320px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 1000px) {
   .sidebar {
     display: none;

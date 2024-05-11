@@ -1,16 +1,34 @@
 @import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "/scss/utilities/variables.scss";
-@import "/scss/layout/header";
+$color_1: #ffffff;
+$color_2: #000000;
+$color_3: #3f729b;
+$color_4: rgba(222, 226, 230, 0.75);
+$font-family_1: "Roboto", sans-serif;
+$font-family_2: "arial", sans-serif;
+$font-family_3: "raleway", sans-serif;
+$color-camionetas: rgb(100, 0, 175);
+$color-autos: rgb(150, 0, 0);
+$color-suv: rgb(0, 0, 150);
 
 html {
 	scroll-behavior: smooth;
 }
+
 body {
 	margin: 0;
-	font-family: $font-family_1;
-	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	color:$color_1;
 }
+
+header {
+	font-family: $font-family_1;
+	background-color: $color_2;
+	display: flex;
+	justify-content: space-between;
+}
+
 .logo {
 	width: 120px;
 	height: 32px;
@@ -20,39 +38,35 @@ body {
 	display: flex;
 	justify-content: left;
 }
+
 .hamburger {
 	display: none;
 }
-.redes {
-	a {
-		i {
-			text-align: center !important;
-			justify-content: center !important;
-			bottom: 10px !important;
-			padding: 15px;
-			font-size: 35px;
-			text-decoration: none;
-			color: $color_2;
-		}
-	}
+
+.redes a i {
+	text-align: center !important;
+	justify-content: center !important;
+	bottom: 10px !important;
+	padding: 15px;
+	font-size: 35px;
+	text-decoration: none;
+	color: $color_2;
 }
-.redes {
-	a {
-		i :active,
-		:focus,
-		:hover {
-			transform: translateY(-10px);
-			transition-duration: 0.2s;
-			transition-timing-function: ease-in !important;
-		}
-	}
+
+.redes a i :active,
+.redes a :focus,
+.redes a :hover {
+	transform: translateY(-10px);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in !important;
 }
-// no pude poner que el efecto sea para la entrada y la salida del hover
+
 .offcanvas {
 	--bs-offcanvas-width: 40vh !important;
 	--bs-offcanvas-height: 100vh !important;
 	padding-bottom: 40px;
 }
+
 .redes {
 	display: inline-flex;
 	padding: 5px;
@@ -61,6 +75,7 @@ body {
 	text-align: center;
 	justify-content: center;
 }
+
 .navegacion {
 	display: flex;
 	display: block !important;
@@ -68,89 +83,86 @@ body {
 	box-sizing: border-box;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+
 .sidebar {
 	display: flex;
 	align-items: center;
 	border-radius: 15px;
 	padding-right: 5px;
-	a {
-		font-family: $font-family_2;
-		padding: 20px;
-		color: $color_1;
-		text-decoration: none;
-		line-height: 1.5;
-		transition: all ease-in-out 0.2s;
-		font-weight: 750;
-		&:hover {
-			padding: 8px;
-			background-color: $background-color_2;
-			transition: all ease-in-out 0.2s;
-			color: $color_2;
-		}
-	}
 }
+.sidebar a {
+	font-family: "arial", sans-serif;
+	padding: 20px;
+	color: $color_1;
+	text-decoration: none;
+	line-height: 1.5;
+	transition: all ease-in-out 0.2s;
+	font-weight: 750;
+}
+.sidebar a:hover {
+	padding: 8px;
+	background-color: $color_1;
+	transition: all ease-in-out 0.2s;
+	color: $color_2;
+}
+
 .img-fluid {
-	font-family: $font-family_1;
-	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	color: $color_1;
 	box-sizing: border-box;
 }
+
+.video-container {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
 .imagenes {
 	height: 700px !important;
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
 }
+
 .modelos {
 	height: 400px !important;
 	width: 100% !important;
 	object-fit: cover !important;
 	object-position: center !important;
 }
-main {
-	width: 100%;
-	height: 400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	div {
-		video {
-			width: 100%;
-			height: 400px;
-			overflow: hidden;
-			position: absolute;
-			object-fit: cover;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-	}
-}
 
 .content {
 	margin-left: 150px;
 	padding: 20px;
 }
+
 section {
-	background-color: $background-color_1;
-	a {
-		color: $color_2;
-		text-decoration: none;
-	}
+	background-color: $color_2;
 }
+section a {
+	color: $color_2;
+	text-decoration: none;
+}
+
 h1 {
 	color: $color_1;
 	padding: 10px;
-	margin-bottom: 0px !important;
+	margin-bottom: 0px;
 	color: $color_1;
 	padding: 10px;
 	padding-top: 50px;
-	margin-bottom: 50px !important;
+	margin-bottom: 50px;
 }
+
 .subir {
 	width: 40px;
 	height: 40px;
 	color: $color_1;
-	background-color: $background-color_1;
+	background-color: $color_2;
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
@@ -159,63 +171,258 @@ h1 {
 	border-radius: 20px;
 	font-size: 20px;
 	box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
-	&:hover {
-		color: $color_1;
-	}
 }
-#ig {
-	&:hover {
-		color: $color_3 !important;
-	}
+.subir:hover {
+	color: $color_1;
 }
+
+#ig:hover {
+	color: $color_3 !important;
+}
+
 .container {
 	max-width: 100% !important;
-	background-color: $background-color_1;
+	background-color: $color_2;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+	padding-left: calc(10px / 2);
+	padding-right: calc(10px / 2);
+	transition: grid-template-columns 0.5s ease;
+}
+
+.grid-item {
+    position: relative;
+	overflow: hidden;
+    cursor: pointer;
+	border: 2px solid $color_1;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 65px;
+	pointer-events: none;
+}
+
+.car-logo {
+    width: 100%;
+    height: 100%;
+	display: flex;
+	z-index: 1;
+}
+
+.etiqueta-camionetas {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	color: $color_1;
+	background-color: $color-camionetas;
+	padding: 5px;
+	z-index: 1;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.etiqueta-autos {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	color: $color_1;
+	background-color: $color-autos;
+	padding: 5px;
+	z-index: 1;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.etiqueta-suv {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	color: $color_1;
+	background-color: $color-suv;
+	padding: 5px;
+	z-index: 1;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.car-details {
+    text-align: center;
+    margin-top: 5px;
+	color: $color_2;
+    background-color: $color_2;
+	font-family: $font-family_1;
+	font-size: 20px;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.car-image {
+    width: 100%;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.car-image:hover {
+    filter: brightness(1.25);
+	transform: scale(1.07);
+}
+
+.nombres {
+	text-align: center;
+	font-size: 25px;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+
+.precios-camionetas {
+	text-align: center;
+	font-size: 25px;
+	font-family: $font-family_1;
+	color: $color_1;
+	background-color: $color-camionetas;
+}
+
+.precios-autos {
+	text-align: center;
+	font-size: 25px;
+	font-family: $font-family_1;
+	color: $color_1;
+	background-color: $color-autos;
+}
+
+.precios-suv {
+	text-align: center;
+	font-size: 25px;
+	font-family: $font-family_1;
+	color: $color_1;
+	background-color: $color-suv;
+}
+
+.individual {
+	display: block;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+}
+
+.nissan {
+	display: flex;
+	flex-direction: column;
+	color: $color_2;
+	font-family: $font-family_3;
+	justify-content: center;
+	align-items: center;
+}
+
+.nissan-p {
+	margin-top: 10px;
+	font-size: 25px;
+	justify-content: center;
+	text-align: center;
+	color: $color_2;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.nissan-h2 {
+	font-size: 65px;
+	font-weight: 400;
+	color: $color_2;
+	padding-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.grid-container-nissan {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr) !important;
+	justify-content: center;
+	gap: 10px;
+	overflow: hidden;
+	width: 50%;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 10px;
+	padding: 10px;
+	width: 500px;
+    margin-bottom: 20px; // Espacio entre las imágenes
+}
+
+.columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Para que la imagen se ajuste correctamente al tamaño
+}
+
 footer {
 	text-align: center;
 	padding: 20px;
-	color: $color_4 !important;
-	p {
-		color: $color_4 !important;
-	}
+	color: $color_1 !important;
 }
+footer p {
+	color: $color_1 !important;
+}
+
 .footer__a {
 	text-decoration: none;
 	padding: 5px;
-	color: $color_4 !important;
+	color: $color_1 !important;
 }
+
 #Inicio {
 	border-start-start-radius: 15px;
 	border-end-start-radius: 15px;
 }
+
 #contacto {
 	border-end-end-radius: 15px;
 	border-start-end-radius: 15px;
 }
+
 .row {
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 }
+
+.row-columns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .card {
 	min-height: 540px;
 }
+
 .img-fluid {
 	max-width: 100%;
 	width: 100%;
 }
+
 .section {
 	display: flex;
 	height: 500px;
 	color: $color_1;
 	gap: 40px;
 }
+
 .card-img-top {
 	height: 400px;
 	width: 500px;
 	object-fit: cover;
 	object-position: center;
 }
+
 .serviceCard {
 	display: flex;
 	flex-direction: column;
@@ -223,6 +430,7 @@ footer {
 	align-items: left;
 	width: 100%;
 }
+
 .card-body {
 	display: flex;
 	flex-direction: column;
@@ -230,6 +438,25 @@ footer {
 	align-items: left;
 	width: 100%;
 }
+
+@media screen and (max-width: 950px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 320px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 1000px) {
 	.sidebar {
 		display: none;
@@ -257,3 +484,4 @@ footer {
 		object-position: center;
 	}
 }
+
