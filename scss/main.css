@@ -120,6 +120,12 @@ header {
      object-position: center;
 }
 
+h5 {
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
 .modelos {
   height: 400px !important;
   width: 100% !important;
@@ -195,6 +201,15 @@ h1 {
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #ffffff;
+}
+
+.carousel-modelos {
+  height: 400px !important;
+  width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: center !important;
+     object-position: center !important;
 }
 
 .logo-container {
@@ -444,12 +459,12 @@ footer p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 700px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .grid-container {
     grid-template-columns: 1fr;
   }

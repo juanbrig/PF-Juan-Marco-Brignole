@@ -91,6 +91,7 @@ header {
 	border-radius: 15px;
 	padding-right: 5px;
 }
+
 .sidebar a {
 	font-family: "arial", sans-serif;
 	padding: 20px;
@@ -100,6 +101,7 @@ header {
 	transition: all ease-in-out 0.2s;
 	font-weight: 750;
 }
+
 .sidebar a:hover {
 	padding: 8px;
 	background-color: $color_1;
@@ -127,6 +129,12 @@ header {
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
+}
+
+h5 {
+	color: $color_1;
+	padding: 10px;
+	margin-bottom: 0px;
 }
 
 .modelos {
@@ -200,6 +208,13 @@ h1 {
 	overflow: hidden;
     cursor: pointer;
 	border: 2px solid $color_1;
+}
+
+.carousel-modelos {
+	height: 400px !important;
+	width: 100% !important;
+	object-fit: cover !important;
+	object-position: center !important;
 }
 
 .logo-container {
@@ -446,13 +461,13 @@ footer p {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 700px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
