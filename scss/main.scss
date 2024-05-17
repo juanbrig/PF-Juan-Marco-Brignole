@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 $color_1: #ffffff;
 $color_2: #000000;
@@ -7,7 +7,8 @@ $color_3: #3f729b;
 $color_4: rgba(222, 226, 230, 0.75);
 $font-family_1: "Roboto", sans-serif;
 $font-family_2: "arial", sans-serif;
-$font-family_3: "raleway", sans-serif;
+$precios: "raleway", sans-serif;
+$nombres: "libre Franklin", sans-serif;
 $color-camionetas: rgb(100, 0, 175);
 $color-autos: rgb(150, 0, 0);
 $color-suv: rgb(0, 0, 150);
@@ -266,21 +267,21 @@ h1 {
 }
 
 .car-image:hover {
-    filter: brightness(1.25);
+    filter: brightness(1.15);
 	transform: scale(1.07);
 }
 
 .nombres {
 	text-align: center;
 	font-size: 25px;
-	font-family: $font-family_1;
+	font-family: $nombres;
 	color: $color_1;
 }
 
 .precios-camionetas {
 	text-align: center;
 	font-size: 25px;
-	font-family: $font-family_1;
+	font-family: $precios;
 	color: $color_1;
 	background-color: $color-camionetas;
 }
@@ -288,7 +289,7 @@ h1 {
 .precios-autos {
 	text-align: center;
 	font-size: 25px;
-	font-family: $font-family_1;
+	font-family: $precios;
 	color: $color_1;
 	background-color: $color-autos;
 }
@@ -296,7 +297,7 @@ h1 {
 .precios-suv {
 	text-align: center;
 	font-size: 25px;
-	font-family: $font-family_1;
+	font-family: $precios;
 	color: $color_1;
 	background-color: $color-suv;
 }
@@ -312,7 +313,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	color: $color_2;
-	font-family: $font-family_3;
+	font-family: $precios;
 	justify-content: center;
 	align-items: center;
 }

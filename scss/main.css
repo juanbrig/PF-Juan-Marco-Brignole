@@ -1,5 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -263,21 +262,21 @@ h1 {
 }
 
 .car-image:hover {
-  filter: brightness(1.25);
+  filter: brightness(1.15);
   transform: scale(1.07);
 }
 
 .nombres {
   text-align: center;
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "libre Franklin", sans-serif;
   color: #ffffff;
 }
 
 .precios-camionetas {
   text-align: center;
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "raleway", sans-serif;
   color: #ffffff;
   background-color: rgb(100, 0, 175);
 }
@@ -285,7 +284,7 @@ h1 {
 .precios-autos {
   text-align: center;
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "raleway", sans-serif;
   color: #ffffff;
   background-color: rgb(150, 0, 0);
 }
@@ -293,7 +292,7 @@ h1 {
 .precios-suv {
   text-align: center;
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "raleway", sans-serif;
   color: #ffffff;
   background-color: rgb(0, 0, 150);
 }
