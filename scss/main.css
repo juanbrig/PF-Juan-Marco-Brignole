@@ -389,6 +389,14 @@ footer p {
   color: #ffffff !important;
 }
 
+.justify-content-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  padding: 5px;
+}
+
 #Inicio {
   border-start-start-radius: 15px;
   border-end-start-radius: 15px;
@@ -452,6 +460,15 @@ footer p {
   justify-content: center;
   align-items: left;
   width: 100%;
+}
+
+.Contactanos {
+  display: block !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  left: 50% !important;
+  width: 50% !important;
 }
 
 @media screen and (max-width: 950px) {
