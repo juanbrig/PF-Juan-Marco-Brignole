@@ -92,12 +92,12 @@ header {
 }
 
 .sidebar a {
-	font-family: "arial", sans-serif;
+	font-family: $font-family_1;
 	padding: 20px;
 	color: $color_1;
 	text-decoration: none;
 	line-height: 1.5;
-	transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.25s;
 	font-weight: 750;
 }
 
@@ -136,11 +136,32 @@ h5 {
 	margin-bottom: 0px;
 }
 
+.card-title {
+	font-family: $font-family_1;
+	color: $color_1;
+	padding: 10px 0px 10px 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.card-text {
+	font-family: $font-family_1;
+	color: $color_1;
+	text-align: justify;
+}
+
 .modelos {
-	height: 400px !important;
+	height: 600px !important;
 	width: 100% !important;
 	object-fit: cover !important;
 	object-position: center !important;
+}
+
+.modelos:hover {
+	opacity: .5;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
 }
 
 .content {
@@ -182,6 +203,37 @@ h1 {
 }
 .subir:hover {
 	color: $color_1;
+}
+
+.buscador {
+	background-color: $color_2;
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#buscarInput {
+	border-radius: 40px 0px 0px 40px;
+	border: 1px solid;
+	border-right: none;
+	padding: 0 4px 0 16px;
+	height: 40px;
+}
+
+#btn-buscador {
+	border-radius: 0px 40px 40px 0px;
+	border: 1px solid;
+	border-left: none;
+	background-color: hsl(0, 0%, 18.82%);
+	padding: 0 16px 0 10px;
+	color: #ffffff;
+	border: none;
+	margin-right: 10px;
+	font-weight: 500;
+}
+
+#lupa-buscador {
+	padding: 7px;
 }
 
 #ig:hover {
@@ -437,6 +489,7 @@ footer p {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	margin: 0px 150px 0px 150px;
 }
 
 .card {
@@ -445,7 +498,6 @@ footer p {
 	width: 100%;
 	color: #fff;
 	background: #000;
-	cursor: pointer;
 	transition: all 0.3s ease;
 }
 
@@ -511,7 +563,7 @@ footer p {
 }
 
 .card h3 {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	font-weight: bold;
 	opacity: 0;
 	margin-bottom: 0.5rem;
@@ -526,7 +578,6 @@ footer p {
 }
 
 .card:hover img {
-	zoom: 1;
 	filter: alpha(opacity=20);
 	opacity: 0.3;
 }
@@ -557,16 +608,18 @@ footer p {
 	max-width: 100%;
 	width: 100%;
 }
+
 .imagen-carrousel {
 	vertical-align: middle;
-    object-fit: contain;
-    height: 700px !important;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
+	object-fit: contain;
+	height: 700px !important;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
 }
+
 .section {
 	display: flex;
 	height: 500px;
@@ -603,7 +656,6 @@ footer p {
 	justify-content: center !important;
 	align-items: center !important;
 	left: 50% !important;
-	width: 50% !important;
 }
 
 @media screen and (max-width: 950px) {
@@ -613,6 +665,9 @@ footer p {
 	.cards {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.modelos {
+		height: 300px !important;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -621,6 +676,14 @@ footer p {
 	}
 	.cards {
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#txt-nissan {
+		margin-top: 70% !important;
+		margin-bottom: -10% !important;
+		padding-left: 10px !important;
 	}
 }
 
