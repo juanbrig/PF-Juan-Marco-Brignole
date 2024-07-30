@@ -362,6 +362,39 @@ h1 {
 	background-color: $color-autos;
 }
 
+section.formulario-contacto {
+    padding: 20px;
+}
+
+section.formulario-contacto h2 {
+    margin-top: 0;
+}
+
+section.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+section.formulario-contacto label,
+section.formulario-contacto input,
+section.formulario-contacto textarea {
+    margin-bottom: 10px;
+}
+
+section.formulario-contacto input,
+section.formulario-contacto textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+section.formulario-contacto button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 .precios-suv {
 	text-align: center;
 	font-size: 25px;
