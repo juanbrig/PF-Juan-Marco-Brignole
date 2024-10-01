@@ -236,7 +236,7 @@ h1 {
 
 .container {
   max-width: 100% !important;
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 
 .grid-container {
@@ -751,4 +751,270 @@ footer p {
     -o-object-position: center;
        object-position: center;
   }
+}
+.cart-and-quote {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.add-to-cart, .insurance-quote {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart {
+  margin-right: 1.5rem;
+}
+
+.add-to-cart h3, .insurance-quote h3 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.add-to-cart p {
+  color: #ffffff;
+  font-family: "raleway", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#addToCartBtn, #insuranceQuoteForm button {
+  background-color: rgb(100, 0, 175);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+#addToCartBtn:hover, #insuranceQuoteForm button:hover {
+  background-color: #47007c;
+}
+
+#insuranceQuoteForm {
+  margin-top: 1rem;
+}
+
+#insuranceQuoteForm label {
+  display: block;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#insuranceQuoteForm input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+}
+#insuranceQuoteForm input:focus {
+  outline: none;
+  border-color: rgb(100, 0, 175);
+}
+
+#quoteResult {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "raleway", sans-serif;
+  font-size: 1.1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0.8;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  border-radius: 25px;
+}
+
+.carousel-control-prev {
+  left: 25% !important;
+}
+
+.carousel-control-next {
+  right: 25% !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators button {
+  background-color: rgb(100, 0, 175);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.individual {
+  background-color: #000000;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.individual h1 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.individual .carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative;
+}
+.individual .carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.individual .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.individual .carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: auto;
+}
+.individual .descripcion {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+.individual .cart-and-quote {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.individual .cart-and-quote .add-to-cart, .individual .cart-and-quote .insurance-quote {
+  flex-basis: 48%;
+}
+.individual .cart-and-quote h3 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.individual .cart-and-quote p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.individual .cart-and-quote .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+.individual .cart-and-quote #quoteResult {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0.8;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  border-radius: 25px;
+}
+
+.carousel-control-prev {
+  left: -5%;
+}
+
+.carousel-control-next {
+  right: -5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators button {
+  background-color: rgb(100, 0, 175);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
 }/*# sourceMappingURL=main.css.map */

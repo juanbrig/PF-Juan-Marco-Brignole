@@ -3,7 +3,6 @@
 $color_1: #ffffff;
 $color_2: #000000;
 $color_3: #3f729b;
-$color_4: rgba(222, 226, 230, 0.75);
 $font-family_1: "Roboto", sans-serif;
 $font-family_2: "arial", sans-serif;
 $precios: "raleway", sans-serif;
@@ -242,7 +241,7 @@ h1 {
 
 .container {
 	max-width: 100% !important;
-	background-color: $color_2;
+	background-color: $color_2 !important;
 }
 
 .grid-container {
@@ -752,4 +751,286 @@ footer p {
 		object-fit: cover;
 		object-position: center;
 	}
+}
+
+.cart-and-quote {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.add-to-cart, .insurance-quote {
+    flex: 1;
+    padding: 1.5rem;
+    background-color: $color_2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart {
+    margin-right: 1.5rem;
+}
+
+.add-to-cart h3, .insurance-quote h3 {
+    color: $color_1;
+    font-family: $font-family_1;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-to-cart p {
+    color: $color_1;
+    font-family: $precios;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#addToCartBtn, #insuranceQuoteForm button {
+    background-color: $color-camionetas;
+    color: $color_1;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: $font-family_1;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($color-camionetas, 10%);
+    }
+}
+
+#insuranceQuoteForm {
+    margin-top: 1rem;
+}
+
+#insuranceQuoteForm label {
+    display: block;
+    color: $color_1;
+    font-family: $font-family_1;
+    margin-bottom: 0.5rem;
+}
+
+#insuranceQuoteForm input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $color_1;
+    font-family: $font-family_1;
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
+        border-color: $color-camionetas;
+    }
+}
+
+#quoteResult {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: $color_1;
+    font-family: $precios;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+// Estilos para el carrusel
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative; // Añadido para posicionar las flechas
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; // Altura fija para el contenedor del carrusel
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%; 
+  opacity: 0.8;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  border-radius: 25px;
+}
+
+.carousel-control-prev {
+  left: 25% !important; // Posicionado fuera de la imagen
+}
+
+.carousel-control-next {
+  right: 25% !important; // Posicionado fuera de la imagen
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators button {
+  background-color: $color-camionetas;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+// Estilos para la sección individual de vehículos
+.individual {
+    background-color: $color_2;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+
+    h1 {
+        color: $color_1;
+        font-family: $font-family_1;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .carousel-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        position: relative;
+    }
+
+    .carousel-inner {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+        margin: auto;
+    }
+
+    .descripcion {
+        color: $color_1;
+        font-family: $font-family_1;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-top: 1.5rem;
+        text-align: justify;
+    }
+
+    .cart-and-quote {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        .add-to-cart, .insurance-quote {
+            flex-basis: 48%;
+        }
+
+        h3 {
+            color: $color_1;
+            font-family: $font-family_1;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $color_1;
+            font-family: $font-family_1;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        #quoteResult {
+            color: $color_1;
+            font-family: $font-family_1;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+// Estilos para el carrusel
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    opacity: 0.8;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    border-radius: 25px;
+}
+
+.carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    background-color: $color-camionetas;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
 }
